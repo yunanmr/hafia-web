@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kebijakan Privasi — Hafia</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      color: #1a1a2e;
+      background: #f9fafb;
+      line-height: 1.7;
+    }
+
+    header {
+      background: #1A237E;
+      color: white;
+      padding: 40px 24px 32px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 28px;
+      font-weight: 700;
+    }
+
+    header p {
+      font-size: 14px;
+      opacity: 0.75;
+      margin-top: 6px;
+    }
+
+    .lang-toggle {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      padding: 20px 24px 0;
+    }
+
+    .lang-toggle button {
+      padding: 6px 18px;
+      border: 1.5px solid #1A237E;
+      border-radius: 20px;
+      background: transparent;
+      color: #1A237E;
+      font-size: 14px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .lang-toggle button.active {
+      background: #1A237E;
+      color: white;
+    }
+
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 32px 24px 60px;
+    }
+
+    section {
+      margin-bottom: 32px;
+    }
+
+    h2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #1A237E;
+      margin-bottom: 10px;
+      padding-bottom: 6px;
+      border-bottom: 2px solid #EEF0F8;
+    }
+
+    p {
+      margin-bottom: 12px;
+      font-size: 15px;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-bottom: 12px;
+    }
+
+    ul li {
+      margin-bottom: 6px;
+      font-size: 15px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #EEF0F8;
+      color: #1A237E;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 2px 10px;
+      border-radius: 12px;
+      margin-bottom: 8px;
+    }
+
+    .highlight {
+      background: #E8EAF6;
+      border-left: 4px solid #1A237E;
+      padding: 12px 16px;
+      border-radius: 4px;
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 13px;
+      color: #888;
+      border-top: 1px solid #e5e7eb;
+    }
+
+    [lang-section] {
+      display: none;
+    }
+
+    [lang-section].visible {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Kebijakan Privasi / Privacy Policy</h1>
+    <p>Hafia — Catat keuangan harian, scan struk AI, laporan lengkap & ekspor data.</p>
+  </header>
+
+  <div class="lang-toggle">
+    <button class="active" onclick="setLang('id')">🇮🇩 Indonesia</button>
+    <button onclick="setLang('en')">🇺🇸 English</button>
+  </div>
+
+  <!-- ══════════════ BAHASA INDONESIA ══════════════ -->
+  <div lang-section="id" class="visible">
+    <div class="container">
+
+      <section>
+        <p>Terakhir diperbarui: <strong>26 Maret 2025</strong></p>
+        <div class="highlight">
+          Privasi Anda adalah prioritas kami. Dokumen ini menjelaskan bagaimana aplikasi <strong>Hafia</strong>
+          mengumpulkan, menggunakan, dan melindungi informasi Anda.
+        </div>
+      </section>
+
+      <section>
+        <h2>1. Informasi yang Kami Kumpulkan</h2>
+
+        <span class="badge">Data Lokal</span>
+        <p>Semua data transaksi keuangan (pemasukan, pengeluaran, kategori, catatan) <strong>tersimpan sepenuhnya di
+            perangkat Anda</strong> dan tidak pernah dikirim ke server kami.</p>
+
+        <span class="badge">Data Analitik (Anonim)</span>
+        <p>Kami menggunakan <strong>Firebase Analytics</strong> untuk memahami bagaimana pengguna menggunakan aplikasi
+          secara umum — seperti fitur yang sering digunakan dan durasi sesi. Data ini bersifat anonim dan tidak dapat
+          mengidentifikasi Anda secara pribadi.</p>
+
+        <span class="badge">Laporan Crash</span>
+        <p><strong>Firebase Crashlytics</strong> mengumpulkan laporan error teknis saat aplikasi mengalami gangguan.
+          Laporan ini membantu kami memperbaiki bug. Data tidak mencakup informasi keuangan Anda.</p>
+      </section>
+
+      <section>
+        <h2>2. Layanan Pihak Ketiga</h2>
+        <p>Hafia menggunakan layanan pihak ketiga berikut yang memiliki kebijakan privasi masing-masing:</p>
+        <ul>
+          <li><strong>Google Firebase</strong> — Analytics &amp; Crashlytics (<a
+              href="https://firebase.google.com/support/privacy" target="_blank">Kebijakan Firebase</a>)</li>
+          <li><strong>Google AdMob</strong> — untuk menampilkan iklan pada versi gratis (<a
+              href="https://policies.google.com/privacy" target="_blank">Kebijakan Google</a>)</li>
+          <li><strong>Google Gemini API</strong> — digunakan untuk fitur scan struk AI. API key disimpan di perangkat
+            Anda sendiri dan tidak kami akses.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>3. Izin Perangkat</h2>
+        <p>Hafia meminta izin berikut untuk menjalankan fiturnya:</p>
+        <ul>
+          <li><strong>Kamera</strong> — untuk memfoto struk belanja secara langsung menggunakan kamera perangkat (fitur
+            Scan Struk AI)</li>
+          <li><strong>Galeri / Perpustakaan Foto</strong> — untuk memilih foto struk dari galeri perangkat Anda sebagai
+            alternatif penggunaan kamera</li>
+          <li><strong>Penyimpanan / File</strong> — untuk menyimpan dan berbagi file ekspor (PDF, Excel, CSV)</li>
+          <li><strong>Biometrik</strong> (Opsional) — untuk autentikasi sidik jari atau Face ID sebagai pengganti PIN
+          </li>
+        </ul>
+        <p>Foto yang diambil dari kamera atau galeri <strong>hanya digunakan sementara</strong> untuk keperluan scan
+          struk dan tidak disimpan di server maupun dibagikan ke pihak lain.</p>
+        <p>Semua izin hanya digunakan untuk tujuan yang disebutkan dan tidak diakses tanpa interaksi pengguna.</p>
+      </section>
+
+      <section>
+        <h2>4. Keamanan Data</h2>
+        <p>Kami berkomitmen menjaga keamanan data Anda:</p>
+        <ul>
+          <li>Seluruh data keuangan tersimpan secara lokal di perangkat menggunakan SQLite</li>
+          <li>Pengguna dapat mengaktifkan proteksi PIN atau biometrik untuk mencegah akses tidak sah</li>
+          <li>Kami tidak memiliki akses ke data keuangan Anda</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>5. Iklan</h2>
+        <p>Versi gratis Hafia menampilkan iklan melalui <strong>Google AdMob</strong>. AdMob dapat menggunakan data
+          perangkat yang bersifat anonim untuk menampilkan iklan yang relevan. Anda dapat menonaktifkan iklan yang
+          dipersonalisasi melalui pengaturan perangkat Anda.</p>
+      </section>
+
+      <section>
+        <h2>6. Perlindungan Anak</h2>
+        <p>Hafia tidak dirancang untuk anak-anak di bawah usia <strong>6 tahun</strong>. Kami tidak secara sengaja
+          mengumpulkan informasi dari anak-anak. Jika Anda mengetahui bahwa anak di bawah umur telah memberikan
+          informasi pribadi, harap hubungi kami segera.</p>
+      </section>
+
+      <section>
+        <h2>7. Hak Pengguna</h2>
+        <p>Sebagai pengguna Hafia, Anda memiliki hak berikut terkait data Anda:</p>
+        <ul>
+          <li><strong>Mengakses data</strong> — seluruh data keuangan dapat dilihat langsung di dalam aplikasi</li>
+          <li><strong>Mengekspor data</strong> — ekspor semua transaksi ke PDF, Excel, atau CSV kapan saja</li>
+          <li><strong>Menghapus data</strong> — hapus transaksi atau kategori individu, atau uninstall aplikasi untuk
+            menghapus semua data secara permanen</li>
+          <li><strong>Meminta penghapusan data analitik</strong> — hubungi kami melalui email untuk permintaan
+            penghapusan data yang terkait dengan identifier perangkat Anda dari Firebase</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>8. Retensi Data</h2>
+        <ul>
+          <li><strong>Data transaksi</strong> — tersimpan di perangkat Anda selama aplikasi terinstal. Dihapus secara
+            permanen saat aplikasi di-uninstall atau data dihapus manual.</li>
+          <li><strong>Data analitik (Firebase)</strong> — disimpan selama maksimal 14 bulan oleh Google sesuai kebijakan
+            Firebase.</li>
+          <li><strong>Laporan crash</strong> — disimpan selama 90 hari di Firebase Crashlytics.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>9. Penggunaan Internet</h2>
+        <p>Hafia menggunakan koneksi internet <strong>hanya</strong> untuk:</p>
+        <ul>
+          <li>Mengirim data analitik anonim ke Firebase Analytics</li>
+          <li>Mengirim laporan crash ke Firebase Crashlytics</li>
+          <li>Menampilkan iklan melalui Google AdMob</li>
+          <li>Mengirim gambar struk ke Gemini API untuk dianalisis (hanya saat fitur Scan Struk digunakan)</li>
+        </ul>
+        <p>Data keuangan Anda <strong>tidak pernah</strong> dikirimkan melalui internet.</p>
+      </section>
+
+      <section>
+        <h2>10. Kepatuhan UU PDP</h2>
+        <p>Hafia berkomitmen untuk mematuhi <strong>Undang-Undang No. 27 Tahun 2022 tentang Perlindungan Data Pribadi
+            (UU PDP)</strong> Republik Indonesia. Kami hanya mengumpulkan data yang diperlukan, memberikan transparansi
+          penuh tentang penggunaan data, dan menghormati hak-hak pengguna sebagaimana diatur dalam peraturan yang
+          berlaku.</p>
+      </section>
+
+      <section>
+        <h2>11. Perubahan Kebijakan</h2>
+        <p>Kami dapat memperbarui kebijakan privasi ini dari waktu ke waktu. Perubahan akan diinformasikan melalui
+          pembaruan aplikasi atau halaman ini. Tanggal pembaruan terakhir tercantum di bagian atas dokumen.</p>
+      </section>
+
+      <section>
+        <h2>12. Hubungi Kami</h2>
+        <p>Jika Anda memiliki pertanyaan mengenai kebijakan privasi ini, silakan hubungi kami:</p>
+        <ul>
+          <li>📧 Email: <strong>yunanmr@yahoo.com</strong></li>
+          <li>🌐 Website: <strong>u9media.com</strong></li>
+        </ul>
+      </section>
+
+    </div>
+  </div>
+
+  <!-- ══════════════ ENGLISH ══════════════ -->
+  <div lang-section="en">
+    <div class="container">
+
+      <section>
+        <p>Last updated: <strong>March 26, 2025</strong></p>
+        <div class="highlight">
+          Your privacy matters to us. This document explains how <strong>Hafia</strong> collects, uses, and protects
+          your information.
+        </div>
+      </section>
+
+      <section>
+        <h2>1. Information We Collect</h2>
+
+        <span class="badge">Local Data</span>
+        <p>All financial transaction data (income, expenses, categories, notes) is <strong>stored entirely on your
+            device</strong> and is never sent to our servers.</p>
+
+        <span class="badge">Anonymous Analytics</span>
+        <p>We use <strong>Firebase Analytics</strong> to understand general app usage — such as frequently used features
+          and session duration. This data is anonymous and cannot identify you personally.</p>
+
+        <span class="badge">Crash Reports</span>
+        <p><strong>Firebase Crashlytics</strong> collects technical error reports when the app crashes. These reports
+          help us fix bugs. They do not include any of your financial data.</p>
+      </section>
+
+      <section>
+        <h2>2. Third-Party Services</h2>
+        <p>Hafia uses the following third-party services, each with their own privacy policies:</p>
+        <ul>
+          <li><strong>Google Firebase</strong> — Analytics &amp; Crashlytics (<a
+              href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy</a>)</li>
+          <li><strong>Google AdMob</strong> — to display ads in the free version (<a
+              href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a>)</li>
+          <li><strong>Google Gemini API</strong> — used for AI receipt scanning. The API key is stored on your own
+            device and is never accessed by us.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>3. Device Permissions</h2>
+        <p>Hafia requests the following permissions to run its features:</p>
+        <ul>
+          <li><strong>Camera</strong> — to photograph purchase receipts directly using the device camera (AI Receipt
+            Scan feature)</li>
+          <li><strong>Photo Library / Gallery</strong> — to select receipt photos from your device gallery as an
+            alternative to using the camera</li>
+          <li><strong>Storage / Files</strong> — to save and share exported files (PDF, Excel, CSV)</li>
+          <li><strong>Biometrics</strong> (Optional) — for fingerprint or Face ID authentication as an alternative to
+            PIN</li>
+        </ul>
+        <p>Photos taken from the camera or selected from the gallery are used <strong>temporarily only</strong> for
+          receipt scanning purposes and are not stored on servers or shared with third parties.</p>
+        <p>All permissions are used solely for the purposes stated and are never accessed without user interaction.</p>
+      </section>
+
+      <section>
+        <h2>4. Data Security</h2>
+        <p>We are committed to protecting your data:</p>
+        <ul>
+          <li>All financial data is stored locally on your device using SQLite</li>
+          <li>Users can enable PIN or biometric protection to prevent unauthorized access</li>
+          <li>We have no access to your financial data</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>5. Advertising</h2>
+        <p>The free version of Hafia displays ads through <strong>Google AdMob</strong>. AdMob may use anonymous device
+          data to serve relevant ads. You can opt out of personalized ads through your device settings.</p>
+      </section>
+
+      <section>
+        <h2>6. Children's Privacy</h2>
+        <p>Hafia is not intended for children under the age of <strong>6</strong>. We do not knowingly collect
+          information from children. If you believe a child has provided personal information, please contact us
+          immediately.</p>
+      </section>
+
+      <section>
+        <h2>7. User Rights</h2>
+        <p>As a Hafia user, you have the following rights regarding your data:</p>
+        <ul>
+          <li><strong>Access your data</strong> — all financial data is viewable directly within the app</li>
+          <li><strong>Export your data</strong> — export all transactions to PDF, Excel, or CSV at any time</li>
+          <li><strong>Delete your data</strong> — delete individual transactions or categories, or uninstall the app to
+            permanently remove all data</li>
+          <li><strong>Request analytics deletion</strong> — contact us via email to request deletion of data associated
+            with your device identifier from Firebase</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>8. Data Retention</h2>
+        <ul>
+          <li><strong>Transaction data</strong> — stored on your device while the app is installed. Permanently deleted
+            when the app is uninstalled or data is manually cleared.</li>
+          <li><strong>Analytics data (Firebase)</strong> — retained for a maximum of 14 months by Google, per Firebase
+            policy.</li>
+          <li><strong>Crash reports</strong> — retained for 90 days in Firebase Crashlytics.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>9. Internet Usage</h2>
+        <p>Hafia uses an internet connection <strong>only</strong> for:</p>
+        <ul>
+          <li>Sending anonymous analytics data to Firebase Analytics</li>
+          <li>Sending crash reports to Firebase Crashlytics</li>
+          <li>Displaying ads via Google AdMob</li>
+          <li>Sending receipt images to the Gemini API for analysis (only when the Scan Receipt feature is used)</li>
+        </ul>
+        <p>Your financial data is <strong>never</strong> transmitted over the internet.</p>
+      </section>
+
+      <section>
+        <h2>10. Changes to This Policy</h2>
+        <p>We may update this privacy policy from time to time. Changes will be communicated through app updates or this
+          page. The last updated date is shown at the top of this document.</p>
+      </section>
+
+      <section>
+        <h2>11. Contact Us</h2>
+        <p>If you have any questions about this privacy policy, please contact us:</p>
+        <ul>
+          <li>📧 Email: <strong>yunanmr@yahoo.com</strong></li>
+          <li>🌐 Website: <strong>u9media.com</strong></li>
+        </ul>
+      </section>
+
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2026 U9Media · Hafia App
+  </footer>
+
+  <script>
+    function setLang(lang) {
+      document.querySelectorAll('[lang-section]').forEach(el => {
+        el.classList.toggle('visible', el.getAttribute('lang-section') === lang);
+      });
+      document.querySelectorAll('.lang-toggle button').forEach((btn, i) => {
+        btn.classList.toggle('active', (lang === 'id' && i === 0) || (lang === 'en' && i === 1));
+      });
+    }
+  </script>
+
+</body>
+
+</html>
